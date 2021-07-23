@@ -1,0 +1,11 @@
+( if
+( or
+( contains ( window_class ) "Code" )
+( contains ( window_class ) "kitty" )
+( contains ( window_class ) "Alacritty" )
+)
+( begin
+( spawn_async (str "transset-df -i " (window_xid) " 0.95" ))
+)
+)
+
